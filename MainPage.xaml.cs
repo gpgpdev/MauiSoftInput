@@ -20,6 +20,11 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
+        private async void Entry_Completed(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Modal());
+        }
     }
 
 }
